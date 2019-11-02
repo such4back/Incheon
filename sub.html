@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>감사정보공개: 목록</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/sub_style.css">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="script/script.js" defer="defer"></script>
+</head>
+<body>
+
+    <div id="fixed_banner">
+        <img src="images/fixed_banner.png" alt="logo">
+        <div id="close"><button></button></div>
+    </div>
+    
+    <nav id="nav">
+    
+        <div id="media_search">
+            <form action="#" method="post">
+                <input type="text" name="search">
+                <input type="submit" value="검색">
+            </form>
+        </div>
+        
+        <div id="gnb">
+            <ul>
+                <li><a href="#">인천소개</a></li>
+                <li><a href="#">소통광장</a></li>
+                <li><a href="#">종합민원</a></li>
+                <li><a href="#">정보공개</a></li>
+                <li><a href="#">분야별정보</a></li>
+            </ul>
+        </div>
+        <div id="sub_back">
+            <div id="sub_nav">
+                <ul>
+                    <li><a href="#">인천정보</a></li>
+                    <li><a href="#">시청안내</a></li>
+                    <li><a href="#">인천역사</a></li>
+                    <li><a href="#">인천통계</a></li>
+                    <li><a href="#">상상인천</a></li>
+                    <li><a href="#">국제교류</a></li>
+                    <li><a href="#">어린이 시청</a></li>
+                </ul>
+                <ul >
+                    <li><a href="#">시민청원</a></li>
+                    <li><a href="#">시민제안</a></li>
+                    <li><a href="#">설문조사</a></li>
+                    <li><a href="#">견학신청</a></li>
+                    <li><a href="#">공모전</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">시민의 소리</a></li>
+                    <li><a href="#">알림서비스</a></li>
+                    <li><a href="#">주민참여예산</a></li>
+                    <li><a href="#">건축자산 추천</a></li> 
+                </ul>
+                <ul>
+                    <li><a href="#">민원정보</a></li>
+                    <li><a href="#">민원편람</a></li>
+                    <li><a href="#">민원조회</a></li>
+                    <li><a href="#">민원상담 / 신청</a></li>
+                    <li><a href="#">안전신고</a></li>
+                    <li><a href="#">부패공익신고</a></li>
+                    <li><a href="#">예산낭비신고</a></li>
+                    <li><a href="#">규제개혁신문고</a></li>
+                    <li><a href="#">온라인 행정심판</a></li>
+                    <li><a href="#">행정서비스 헌장</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">청렴인천</a></li>
+                    <li><a href="#">정보공개</a></li>
+                    <li><a href="#">재정정보</a></li>
+                    <li><a href="#">자치법규</a></li>
+                    <li><a href="#">행정자료실</a></li>
+                    <li><a href="#">정책실명제</a></li>
+                    <li><a href="#">공공데이터개방</a></li>
+                    <li><a href="#">계약 / 입찰정보</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">교통</a></li>
+                    <li><a href="#">안전</a></li>
+                    <li><a href="#">환경</a></li>
+                    <li><a href="#">교육</a></li>
+                    <li><a href="#">지역개발</a></li>
+                    <li><a href="#">경제투자</a></li>
+                    <li><a href="#">여성가족</a></li>
+                    <li><a href="#">보건복지보훈</a></li>
+                    <li><a href="#">농림해양수산</a></li>
+                    <li><a href="#">문화체육관광</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="logo"><a href="index.html"></a></div>
+    
+        <button id="search_nav"><img src="images/search_nav.png" alt="search"></button>
+        <button id="menu_nav"><img src="images/menu_nav.png" alt="menu"></button>
+
+        <ul id="login">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>    
+        </ul>
+    </nav>
+
+    <nav id="media_menu">
+        <ul id="menu_login">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>    
+        </ul>
+        <button id="menu_close"><img src="images/close.png" alt="close"></button>
+        <ul id="media_menu_list">
+            <li>
+                <a href="#">인천소개</a>
+                <ul class="media_menu_sub">
+                    <li><a href="#">인천정보</a></li>
+                    <li><a href="#">시청안내</a></li>
+                    <li><a href="#">인천역사</a></li>
+                    <li><a href="#">인천통계</a></li>
+                    <li><a href="#">상상인천</a></li>
+                    <li><a href="#">국제교류</a></li>
+                    <li><a href="#">어린이 시청</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">소통광장</a>
+                <ul class="media_menu_sub">
+                    <li><a href="#">시민청원</a></li>
+                    <li><a href="#">시민제안</a></li>
+                    <li><a href="#">설문조사</a></li>
+                    <li><a href="#">견학신청</a></li>
+                    <li><a href="#">공모전</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">시민의 소리</a></li>
+                    <li><a href="#">알림서비스</a></li>
+                    <li><a href="#">주민참여예산</a></li>
+                    <li><a href="#">건축자산 추천</a></li> 
+                </ul>
+            </li>
+            <li>
+                <a href="#">종합민원</a>
+                <ul class="media_menu_sub">
+                    <li><a href="#">민원정보</a></li>
+                    <li><a href="#">민원편람</a></li>
+                    <li><a href="#">민원조회</a></li>
+                    <li><a href="#">민원상담 / 신청</a></li>
+                    <li><a href="#">안전신고</a></li>
+                    <li><a href="#">부패공익신고</a></li>
+                    <li><a href="#">예산낭비신고</a></li>
+                    <li><a href="#">규제개혁신문고</a></li>
+                    <li><a href="#">온라인 행정심판</a></li>
+                    <li><a href="#">행정서비스 헌장</a></li>
+                </ul>
+            </li>
+            <li>    
+                <a href="#">정보공개</a>
+                <ul class="media_menu_sub">
+                    <li><a href="sub.html">청렴인천</a></li>
+                    <li><a href="#">정보공개</a></li>
+                    <li><a href="#">재정정보</a></li>
+                    <li><a href="#">자치법규</a></li>
+                    <li><a href="#">행정자료실</a></li>
+                    <li><a href="#">정책실명제</a></li>
+                    <li><a href="#">공공데이터개방</a></li>
+                    <li><a href="#">계약 / 입찰정보</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">분야별정보</a>
+                <ul class="media_menu_sub">
+                    <li><a href="#">교통</a></li>
+                    <li><a href="#">안전</a></li>
+                    <li><a href="#">환경</a></li>
+                    <li><a href="#">교육</a></li>
+                    <li><a href="#">지역개발</a></li>
+                    <li><a href="#">경제투자</a></li>
+                    <li><a href="#">여성가족</a></li>
+                    <li><a href="#">보건복지보훈</a></li>
+                    <li><a href="#">농림해양수산</a></li>
+                    <li><a href="#">문화체육관광</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+    <div id="container">
+        <div id="size">
+            <span>글자 크기</span>
+            <button id="upsize"></button>
+            <button id="downsize"></button>
+            <button id="reset"></button>
+        </div>
+        <aside id="sidebar">
+            <div id="title"><h2>정보공개</h2></div>
+            <ul>
+                <li class="fold">
+                    <a href="#">청렴인천</a>
+                    <ul class="sub_list">
+                        <li><a href="#">감사정보공개</a></li>
+                        <li><a href="#">청렴한 세상 인천</a></li>
+                        <li><a href="#">공직자부조리 신고</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">정보공개</a>
+                    <ul class="sub_list">
+                        <li><a href="#">사전정보공표</a></li>
+                        <li><a href="#">정보공개제도안내</a></li>
+                        <li><a href="#">정보공개자료실</a></li>
+                        <li><a href="#">원문정보</a></li>
+                        <li><a href="#">정보목록</a></li>
+                        <li><a href="#">정보공개청구</a></li>
+                        <li><a href="#">업무추진비</a></li>
+                        <li><a href="#">조직정보</a></li>
+                        <li><a href="#">공무국외여행보고서</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">재정정보</a>
+                    <ul class="sub_list">
+                        <li><a href="#">재정정보</a></li>
+                        <li><a href="#">재정공시</a></li>
+                        <li><a href="#">재정정보공개</a></li>
+                        <li><a href="#">지방공기업통합공시</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">자치법규</a>
+                </li>
+                <li>
+                    <a href="#">행정자료실</a>
+                    <ul class="sub_list">
+                        <li><a href="#">주요시책</a></li>
+                        <li><a href="#">행정간행물</a></li>
+                        <li><a href="#">시청 행정자료실 이용안내</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">정책실명제</a>
+                </li>
+                <li>
+                    <a href="#">공공데이터개방</a>
+                    <ul class="sub_list">
+                        <li><a href="#">공공데이터 개방 이용안내</a></li>
+                        <li><a href="#">공공데이터 제공 신청</a></li>
+                        <li><a href="#">공공데이터 목록</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">계약 / 입찰정보</a>
+                </li>
+            </ul>
+        </aside>
+
+        <article id="article">
+            <div id="information">
+                <h3>감사정보공개</h3>
+                <p>감사 계획과 실적을 공개합니다.</p>
+                <div id="share">
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div id="map">
+                    <button><a href="index.html"></a></button>
+                    <p><a href="#">정보공개</a> &nbsp; > &nbsp; <a href="#">청렴인천</a> &nbsp;>&nbsp; 감사정보공개</p>
+                </div>
+            </div>
+
+            <div id="list">
+                <p>총 <span>289</span> 건</p>
+                <p>｜</p>
+                <p><span>1 / 29</span> 페이지</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>작성자</th>
+                            <th>작성일</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>289</td>
+                            <td><a href="#">2018년 인천도시공사 종합감사 결과 공개</a></td>
+                            <td>김재현</td>
+                            <td>2019-03-04</td>
+                        </tr>
+                        <tr>
+                            <td>288</td>
+                            <td><a href="#">[감사원] 지방세 및 부담금 부과 징수 실태 공개문</a></td>
+                            <td>윤공명</td>
+                            <td>2019-02-18</td>
+                        </tr>
+                        <tr>
+                            <td>287</td>
+                            <td><a href="#">2018년 경제자유구역청 종합감사 결과 공개</a></td>
+                            <td>이인화</td>
+                            <td>2019-01-19</td>
+                        </tr>
+                        <tr>
+                            <td>286</td>
+                            <td><a href="#">2018년도 인천신용보증재단 종합감사 결과 공개</a></td>
+                            <td>김문숙</td>
+                            <td>2018-11-16</td>
+                        </tr>
+                        <tr>
+                            <td>285</td>
+                            <td><a href="#">2018년도 보건환경연구원 종합감사 결과 공개</a></td>
+                            <td>김종필</td>
+                            <td>2018-11-06</td>
+                        </tr>
+                        <tr>
+                            <td>284</td>
+                            <td><a href="#">2018년도 인천관광공사 종합감사 결과 공개</a></td>
+                            <td>김재현</td>
+                            <td>2018-10-17</td>
+                        </tr>
+                        <tr>
+                            <td>283</td>
+                            <td><a href="#">2018년 인천글로벌캠퍼스운영재단 종합감사 결과 공개</a></td>
+                            <td>전희정</td>
+                            <td>2018-10-05</td>
+                        </tr>
+                        <tr>
+                            <td>282</td>
+                            <td><a href="#">2018년도 월미 계양공원사업소 종합감사 결과 공개</a></td>
+                            <td>이기식</td>
+                            <td>2018-09-06</td>
+                        </tr>
+                        <tr>
+                            <td>281</td>
+                            <td><a href="#">2018년 여성복지관 종합감사결과 공개</a></td>
+                            <td>박정연</td>
+                            <td>2018-08-13</td>
+                        </tr>
+                        <tr>
+                            <td>280</td>
+                            <td><a href="#">2018년 아동복지관 종합감사 결과 공개</a></td>
+                            <td>김창현</td>
+                            <td>2018-08-10</td>
+                        </tr>
+                    </tbody>
+                </table>
+    
+                <ul id="page">
+                    <li><button></button></li>
+                    <li><button></button></li>
+                    <li><a href="#" class="page_on">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">9</a></li>
+                    <li><a href="#">10</a></li>
+                    <li><button></button></li>
+                    <li><button></button></li>
+                </ul>
+    
+                <div id="page_search">
+                    <form action="#" method="post">
+                        <select>
+                            <option value="title">제목</option>
+                            <option value="name">작성자</option>
+                            <option value="content">내용</option>
+                        </select>   
+                        <input type="text" name="search">
+                        <input type="button" value="검색">
+                    </form>
+                </div>
+            </div>
+        </article>
+    </div>
+
+        <footer id="footer">
+            <ul>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">저작권보호정책</a></li>
+                <li><a href="#">이메일 수집거부</a></li>
+                <li><a href="#">사이트 이용안내</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">RSS 센터</a></li>
+                <li><a href="#">보안서비스</a></li>
+                <li><a href="#">찾아오는 길</a></li>
+                <li>
+                    <a href="#">군/구 홈페이지<span id="footer_plus"></span></a>
+                    <ul id="other">
+                        <li><a href="http://www.icjg.go.kr/index">중구청</a></li>
+                        <li><a href="http://www.icdonggu.go.kr/open_content/main/">동구청</a></li>
+                        <li><a href="http://michu.incheon.kr/home/index.asp">미추홀구청</a></li>
+                        <li><a href="http://www.yeonsu.go.kr/main/">연수구청</a></li>
+                        <li><a href="http://www.namdong.go.kr/main/">남동구청</a></li>
+                        <li><a href="http://www.icbp.go.kr/open_content/main/">부평구청</a></li>
+                        <li><a href="http://www.gyeyang.go.kr/open_content/main/">계양구청</a></li>
+                        <li><a href="http://www.seo.incheon.kr/open_content/main/">서구청</a></li>
+                        <li><a href="http://www.ganghwa.go.kr/open_content/main/">강화군청</a></li>
+                        <li><a href="http://www.ongjin.go.kr/open_content/main/">옹진군청</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="footer_logo"></div>
+            <p>
+                인천광역시 남동구 정각로 29(구월동) 1554<br>
+                대표전화: 032-120<br>
+                Copyright © 2013. Incheon Metropolitan City. All rights reserved.
+            </p>
+            <div id="callcenter">
+                <p>
+                    365일 24시간<br>
+                    <span id="number">032-120</span>
+                </p>
+                <p>
+                    원하는 정보를 찾지 못하셨나요?<br>궁금한 건 언제나 미추홀 콜센터!
+                </p>
+        </footer>
+
+</body>
+</html>
