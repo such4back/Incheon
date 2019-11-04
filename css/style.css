@@ -128,21 +128,7 @@ input:-ms-input-placeholder, input::-webkit-input-placeholder, input::-moz-place
 #sub_nav > ul:last-child > li:nth-child(9) { background-image: url("../images/sub_9.png"); }
 #sub_nav > ul:last-child > li:nth-child(10) { background-image: url("../images/sub_10.png"); }
 
-#sub_nav > ul > li > a[href="sub.html"] { position: relative; color: #0070ba; }
-#sub_nav > ul > li > a[href="sub.html"]::after {
-    opacity: 0;
-    content: "Sub";
-    position: absolute;
-    transform: translateY(-50%);
-    top: 50%; right: 20px;
-    width: 70px; height: 30px;
-    line-height: 30px;
-    background-color: #0070ba;
-    color: #fff;
-    transition: 0.1s;
-}
-
-#sub_nav > ul > li > a[href="sub.html"]:hover::after { opacity: 1; }
+#sub_nav > ul > li > a[href="sub.html"] { color: #0070ba; }
 
 #search_nav, #menu_nav { display: none; }
 
